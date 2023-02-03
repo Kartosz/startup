@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #5955b3;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+.nav{
+    color: white;
+    width: 20%;
+}
+.nav-header{
+    height: 25%;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.logo{
+    padding-top: 50px;
+}
+.folder-container{
+    height: 55%;
+}
+.nav-folder{
+    list-style-type: none;
+}
+.nav-item{
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.nav-item i{
+    margin-right: 20px;
+}
+.setting-container{
+    height: 20%;
+}
+.nav-setting{
+    list-style-type: none;
+    padding-top: 50px;
+}
+.nav-item2{
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.todo{
+    display: flex;
+    margin: 12px;
+    width: 80%;
+    height: 100%;
+    color: #5955b3;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+.main-container{
+    width: 60%;
+}
+.sub-container{
+    width: 40%;
+}
