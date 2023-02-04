@@ -149,3 +149,18 @@ i{
     border-bottom-right-radius: 30px;
     background-color: #f9f8fd;
 }
+.sub-info{
+    display: flex;
+    margin-left: 190px;
+    margin-top: 45px;
+    color: black;
+}
+.avt{
+    border-radius: 50px;
+    margin: -5px 5px;
+}
+.user-id{
+    opacity: 50%;
+    font-size: small;
+    margin-left: 25px;
+}
