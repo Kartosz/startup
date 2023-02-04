@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -39,11 +42,47 @@
                 <div class="todo-filter">
                     <h5 class="filter">Filter by:</h5>
                     <form class="sort" action="">
-                        
+                        <select class="filter-option">
+                            <option value="">Time</option>
+                        </select>
+                        <select class="filter-option">
+                            <option value="">Level</option>
+                        </select>
+                        <select class="filter-option">
+                            <option value="">Language</option>
+                        </select>
+                        <select class="filter-option">
+                            <option value="">Type</option>
+                        </select>
                     </form>
                 </div>
                 <div class="todo-list">
-
+                    <div class="todo-box">
+                        <div class="picture">
+                            <img width="100%" src="pic.png" alt="troll">
+                        </div>
+                        <div class="box-text">
+                            <h2 class="margin-bottom">Operating System</h2>
+                            <p class="margin-bottom" id="opacity">Learn the basic operating system abstactions, mechanisms and their implementaions</p>
+                            <p>Deadline: <b>00:00</b></p>
+                        </div>
+                        <div class="box-button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="todo-box">
+                        <div class="picture">
+                            <img width="100%" src="pic.png" alt="troll">
+                        </div>
+                        <div class="box-text">
+                            <h2 class="margin-bottom">Artificial Intelligence</h2>
+                            <p class="margin-bottom" id="opacity">Intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals</p>
+                            <p>Deadline: <b>00:00</b></p>
+                        </div>
+                        <div class="box-button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="sub-container">
