@@ -1,99 +1,120 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Signika', sans-serif;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
     background-color: #5955b3;
 }
-html{
+
+html {
     width: 100%;
     height: 100%;
 }
-i{
+
+i {
     font-size: large;
 }
-.container{
+
+.container {
     display: flex;
     width: 100%;
     height: 100%
 }
-.nav{
+
+.nav {
     color: white;
     width: 20%;
 }
-.nav-header{
+
+.nav-header {
     height: 20%;
     text-align: center;
     font-weight: bold;
     font-size: large;
 }
-.logo{
+
+.logo {
     padding-top: 50px;
 }
-.folder-container{
+
+.folder-container {
     height: 55%;
 
 }
-.nav-folder{
+
+.nav-folder {
     list-style-type: none;
 }
-.nav-item{
+
+.nav-item {
     font-size: large;
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
     opacity: 80%;
 }
-.nav-item i{
+
+.nav-item i {
     margin-right: 20px;
 }
-.nav-item:hover{
+
+.nav-item:hover {
     opacity: 100%;
 }
-.setting-container{
+
+.setting-container {
     height: 20%;
 }
-.nav-setting{
+
+.nav-setting {
     list-style-type: none;
     padding-top: 50px;
     opacity: 80%;
 }
-.nav-item2{
+
+.nav-item2 {
     font-size: large;
     font-weight: bold;
     padding: 20px;
 }
-.nav-item2 i{
+
+.nav-item2 i {
     margin-right: 20px;
 }
-.todo{
+
+.todo {
     display: flex;
     margin: 12px;
     width: 80%;
     height: 100%;
     color: #5955b3;
-    
+
 }
-.main-container{
+
+.main-container {
     width: 60%;
     background-color: white;
     border: 1px solid white;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.main-header{
+
+.main-header {
     padding-top: 40px;
     padding-left: 25px;
 }
-.todo-filter{
+
+.todo-filter {
     color: black;
     display: flex;
     margin: 25px;
 }
-.filter-option{
+
+.filter-option {
     margin-left: 20px;
     margin-top: -50px;
     padding: 2px 10px;
@@ -101,7 +122,8 @@ i{
     border-radius: 80px;
     opacity: 60%;
 }
-.todo-box{
+
+.todo-box {
     display: flex;
     border: 1px solid #fde2ff;
     border-radius: 30px;
@@ -115,17 +137,21 @@ i{
     position: relative;
     margin-bottom: 12px;
 }
-.picture{
+
+.picture {
     width: 200px;
 }
-.box-text{
+
+.box-text {
     line-height: 24px;
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
     color: white;
     font-size: larger;
 }
-.box-button{
+
+.box-button {
     display: flex;
     right: 12px;
     bottom: 12px;
@@ -137,30 +163,142 @@ i{
     align-items: center;
     justify-content: center;
 }
-.margin-bottom{
+
+.margin-bottom {
     margin-bottom: 12px;
 }
-#opacity{
+
+#opacity {
     opacity: 50%;
 }
-.sub-container{
+
+.sub-container {
     width: 40%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: #f9f8fd;
 }
-.sub-info{
+
+.sub-info {
     display: flex;
     margin-left: 190px;
     margin-top: 45px;
     color: black;
 }
-.avt{
+
+.avt {
     border-radius: 50px;
     margin: -5px 5px;
 }
-.user-id{
+
+.user-id {
     opacity: 50%;
     font-size: small;
     margin-left: 25px;
+}
+
+.wrapper {
+    width: 350px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .icons span:hover {
+    background: #f2f2f2;
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: #9B59B6;
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
 }
