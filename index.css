@@ -21,10 +21,8 @@ i {
 .container-bt {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #5955b3;
-    padding-bottom: 24px;
-
 }
 
 .nav-bt {
@@ -66,6 +64,7 @@ i {
 
 .nav-item:hover {
     opacity: 100%;
+    transform: translateX(16px);
 }
 
 .setting-container {
@@ -75,23 +74,28 @@ i {
 .nav-setting {
     list-style-type: none;
     padding-top: 50px;
-    opacity: 80%;
 }
 
 .nav-item2 {
     font-size: large;
     font-weight: bold;
     padding: 20px;
+    opacity: 80%;
+
 }
 
 .nav-item2 i {
     margin-right: 20px;
 }
 
+.nav-item2:hover{
+    opacity: 100%;
+    transform: translateX(16px);
+}
+
 .todo {
     display: flex;
-    margin: 12px;
-    width: 80%;
+    padding: 12px;
     height: 100%;
     color: #5955b3;
 
@@ -106,8 +110,14 @@ i {
 }
 
 .main-header {
-    padding-top: 40px;
-    padding-left: 25px;
+
+}
+.todo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 0 40px;
+
 }
 
 .todo-filter {
@@ -202,7 +212,7 @@ i {
 
 .wrapper {
     width: 350px;
-    margin: 20px;
+    margin: 20px auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
@@ -304,4 +314,63 @@ header .current-date {
 
 .days li:not(.active):hover::before {
     background: #f2f2f2;
+}
+
+/* Button Effect */
+
+.box-button:hover {
+    transform: translateY(-3px);
+}
+
+.box-button {
+    border-radius: 10rem;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    right: 12px;
+    bottom: 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: #5955b3;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.box-button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5955b3;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.box-button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #3d3a82;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.box-button:hover {
+    color: #fff;
+}
+
+.box-button:hover:before {
+    width: 100%;
 }
